@@ -1,0 +1,9 @@
+[
+	{
+		"mobiletesting":"//a[text()='MOBILE TESTING']",
+		"email":"philadelphia-field-email",
+		"title":"Home page",
+		"signup":"philadelphia-field-submit"	
+	}
+ 
+]

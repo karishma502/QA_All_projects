@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<mobiletesting>//a[text()='MOBILE TESTING']</mobiletesting>
+	<email>philadelphia-field-email</email>
+	<signup>philadelphia-field-submit</signup>
+	<quize>//a[contains(text(),'Quiz')]</quize>
+</menu>
