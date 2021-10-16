@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-06T17:48:08 IST" name="Suite" finished-at="2021-10-06T17:49:54 IST" duration-ms="106885">
+    <groups>
+    </groups>
+    <test started-at="2021-10-06T17:48:08 IST" name="FireFox Test" finished-at="2021-10-06T17:49:11 IST" duration-ms="63334">
+      <class name="tng.Multple_Browser">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tng.Multple_Browser@ea6147e]" started-at="2021-10-06T17:48:08 IST" name="beforeTest" finished-at="2021-10-06T17:48:48 IST" duration-ms="40297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="login()[pri:0, instance:tng.Multple_Browser@ea6147e]" started-at="2021-10-06T17:48:48 IST" name="login" finished-at="2021-10-06T17:49:03 IST" duration-ms="15159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tng.Multple_Browser@ea6147e]" started-at="2021-10-06T17:49:03 IST" name="afterTest" finished-at="2021-10-06T17:49:11 IST" duration-ms="7840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tng.Multple_Browser -->
+    </test> <!-- FireFox Test -->
+    <test started-at="2021-10-06T17:49:11 IST" name="ChromeTest" finished-at="2021-10-06T17:49:54 IST" duration-ms="43294">
+      <class name="tng.Multple_Browser">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tng.Multple_Browser@7205765b]" started-at="2021-10-06T17:49:11 IST" name="beforeTest" finished-at="2021-10-06T17:49:34 IST" duration-ms="22648" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="login()[pri:0, instance:tng.Multple_Browser@7205765b]" started-at="2021-10-06T17:49:34 IST" name="login" finished-at="2021-10-06T17:49:51 IST" duration-ms="17345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tng.Multple_Browser@7205765b]" started-at="2021-10-06T17:49:51 IST" name="afterTest" finished-at="2021-10-06T17:49:54 IST" duration-ms="3299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tng.Multple_Browser -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

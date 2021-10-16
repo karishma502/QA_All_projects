@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FireFox Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tng.Multple_Browser">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="login"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- tng.Multple_Browser -->
+    </classes>
+  </test> <!-- FireFox Test(failed) -->
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="tng.Multple_Browser">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="login"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- tng.Multple_Browser -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
