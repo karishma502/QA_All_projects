@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.dom4j.Document;
@@ -52,10 +51,6 @@ public class BaseUI_v3_xml_OR {
 					System.getProperty("user.dir") + "//src//test//resources//drivers//chromedriver.exe");
 			driver=new ChromeDriver();
 		}
-		
-		driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(300, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
 
 		if(xmlinputFile == null)
 		{
@@ -115,7 +110,7 @@ public class BaseUI_v3_xml_OR {
 			} else if (locatorKey.endsWith("_Xpath")) {
 				//element = driver.findElement(By.xpath(prop.getProperty(locatorKey)));
 				String temp = xmlDocument.selectSingleNode("//rediff/"+locatorKey).getText();	
-				System.out.println("Locator key using xml is:"+temp);
+				System.out.println("getelement-Xpath - Locator key using xml is:"+temp);
 				element=driver.findElement(By.xpath(temp));
 				logger.log(Status.INFO, "Locator Identidied : " + locatorKey);
 			} else if (locatorKey.endsWith("_ClassName")) {
@@ -152,12 +147,15 @@ public class BaseUI_v3_xml_OR {
 		//driver.findElement(By.xpath(prop.getProperty(xpathkey))).click();
 		//xml file loading implemented only for this function for demo purposes
 		String xpath_xml = xmlDocument.selectSingleNode("//rediff/"+xpathkey).getText();	
-		System.out.println("Locator key is:"+xpath_xml);
+		System.out.println("elementClick - Locator key is:"+xpath_xml);
 		driver.findElement(By.xpath(xpath_xml)).click();
 	}
 
 	public void enterText(String xpathkey, String data) {
-		driver.findElement(By.xpath(prop.getProperty(xpathkey))).sendKeys(data);
+		//driver.findElement(By.xpath(prop.getProperty(xpathkey))).sendKeys(data);
+		String xpath_xml = xmlDocument.selectSingleNode("//rediff/"+xpathkey).getText();	
+		System.out.println("enterText - Locator key is:"+xpath_xml);
+		driver.findElement(By.xpath(xpath_xml)).sendKeys(data);
 	}
 	
 	//Reporting functions 
